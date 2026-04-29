@@ -1,5 +1,7 @@
 # HNG Anomaly Detection Engine
 
+![Architecture Diagram](docs/architecture.png)
+
 This is a real-time anomaly detection and DDoS protection daemon built as part of the HNG DevOps internship Stage 3 task. It runs alongside a Nextcloud instance, watches all incoming HTTP traffic through Nginx, learns what normal traffic looks like, and automatically blocks suspicious IPs using iptables when something deviates from the norm.
 
 **Live Dashboard:** http://monitor.godsondevops.tech:8080
@@ -110,7 +112,3 @@ The dashboard will be available at port 8080 and Nextcloud will be accessible vi
 ## Repository Structure
 
 The detector folder contains all the Python source files. main.py is the entry point that starts all components. monitor.py tails the Nginx log and manages the sliding windows. baseline.py handles the rolling 30-minute baseline calculation. detector.py contains the z-score anomaly detection logic. blocker.py manages iptables rules. unbanner.py runs the backoff unban scheduler. notifier.py sends Slack alerts. dashboard.py serves the Flask web UI on port 8080. config.yaml holds all configuration values. The nginx folder contains the reverse proxy configuration with JSON logging enabled. The screenshots folder contains all required proof screenshots for grading.
-
-## Architecture
-
-![Architecture Diagram](docs/architecture.png)
