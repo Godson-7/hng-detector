@@ -1,0 +1,25 @@
+log_path: /var/log/nginx/hng-access.log
+
+sliding_window_seconds: 60
+baseline_window_seconds: 1800
+baseline_recalc_interval: 60
+
+zscore_threshold: 3.0
+rate_multiplier_threshold: 5.0
+error_rate_multiplier: 3.0
+
+mean_floor: 1.0
+stddev_floor: 0.5
+
+unban_schedule:
+  - 600
+  - 1800
+  - 7200
+  - -1
+
+dashboard_port: 8080
+dashboard_refresh_seconds: 3
+
+slack_webhook_url: "YOUR_SLACK_WEBHOOK_URL
+
+audit_log_path: /app/audit.log
