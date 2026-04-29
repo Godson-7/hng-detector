@@ -10,7 +10,7 @@ This is a real-time anomaly detection and DDoS protection daemon built as part o
 
 **GitHub:** https://github.com/Godson-7/hng-detector
 
-**Blog Post:** coming soon
+**Blog Post:** https://medium.com/@godsontutu275/how-i-built-a-real-time-ddos-detection-engine-from-scratch-199c9123f2fb
 
 
 ## Language Choice
