@@ -1,6 +1,6 @@
 # HNG Anomaly Detection Engine
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](docs/Architecture.png)
 
 This is a real-time anomaly detection and DDoS protection daemon built as part of the HNG DevOps internship Stage 3 task. It runs alongside a Nextcloud instance, watches all incoming HTTP traffic through Nginx, learns what normal traffic looks like, and automatically blocks suspicious IPs using iptables when something deviates from the norm.
 
