@@ -17,9 +17,9 @@ unban_schedule:
   - 7200
   - -1
 
-dashboard_port: 8080
+dashboard_port: 8888
 dashboard_refresh_seconds: 3
 
-slack_webhook_url: "YOUR_SLACK_WEBHOOK_URL
+slack_webhook_url: "YOUR_SLACK_WEBHOOK_URL"
 
-audit_log_path: /app/audit.log
+audit_log_path: /var/log/nginx/audit.log
